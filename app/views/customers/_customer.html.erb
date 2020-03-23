@@ -1,7 +1,12 @@
+<link rel="stylesheet" media="all" href="app/assets/customer.scss">
+
 <div class="customer">
 <h2> <%= customer.full_name %> </h2>
 <p>Phone: Number: <%= customer.phone_number %> </p>
   <p>email: <%= customer.email_address %> </p>
+  <div id="pics">
+    <%= image_tag customer.image %>
+  </div>
 </div>
 
 

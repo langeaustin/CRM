@@ -3,4 +3,8 @@ Rails.application.routes.draw do
   ActiveAdmin.routes(self)
 
   root to: 'customers#index'
+
+  get 'alphabetized' => 'customers#alphabetized', as: 'alphabetized'
+
+  get 'missing_email' => 'customers#missing_email', as: 'missing_email'
 end
