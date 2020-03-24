@@ -1,12 +1,16 @@
-<link rel="stylesheet" media="all" href="app/assets/customer.scss">
-
-<div class="customer">
-<h2> <%= customer.full_name %> </h2>
-<p>Phone: Number: <%= customer.phone_number %> </p>
+<div class="border">
+<div class="column">
+  <div class="card">
+    <div class="card-content">
+  <h2> <%= customer.full_name %> </h2>
+  <p>Phone: Number: <%= customer.phone_number %> </p>
   <p>email: <%= customer.email_address %> </p>
-  <div id="pics">
+  <figure class="image is-96x96">
     <%= image_tag customer.image %>
+  </figure>
   </div>
+</div>
+</div>
 </div>
 
 

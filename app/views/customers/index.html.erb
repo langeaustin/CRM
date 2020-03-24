@@ -1,5 +1,12 @@
+<div class="box"
 <h1> All Customers</h1>
+<br>
+</div>
+<div class="columns">
 <%= render @customers %>
+</div>
 
-<h5><%= link_to 'alphabetized Order', alphabetized_path  %></h5>
-<h5><%= link_to 'Customers Missing Emails', missing_email_path  %></h5>
+
+<%= link_to 'Alphabetical Order', alphabetized_path  %>
+<br>
+<%= link_to 'Customers Missing Emails', missing_email_path  %>

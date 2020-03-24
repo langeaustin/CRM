@@ -1,3 +1,9 @@
 <h1>Customers in Alphabetical Order</h1>
-
+<br>
+<div class="columns">
 <%= render @customers %>
+</div>
+
+<%= link_to 'Customers Missing Email', missing_email_path %>
+<br>
+<%= link_to 'Back', root_path %>
